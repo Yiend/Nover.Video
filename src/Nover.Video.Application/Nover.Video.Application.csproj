@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<RootNamespace>Nover.Video.Application</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="BBDown.Core\APP\Header\device.proto" />
+	  <None Remove="BBDown.Core\APP\Header\fawkesreq.proto" />
+	  <None Remove="BBDown.Core\APP\Header\locale.proto" />
+	  <None Remove="BBDown.Core\APP\Header\metadata.proto" />
+	  <None Remove="BBDown.Core\APP\Header\network.proto" />
+	  <None Remove="BBDown.Core\APP\Header\restriction.proto" />
+	  <None Remove="BBDown.Core\APP\Payload\dmviewreq.proto" />
+	  <None Remove="BBDown.Core\APP\Payload\playviewreq.proto" />
+	  <None Remove="BBDown.Core\APP\Response\dmviewreply.proto" />
+	  <None Remove="BBDown.Core\APP\Response\playviewreply.proto" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="QRCoder" Version="1.4.3" />
+		<PackageReference Include="SharpZipLib" Version="1.4.2" />
+		<PackageReference Include="System.CommandLine" Version="2.0.0-beta4.22272.1" />
+		<PackageReference Include="Google.Protobuf" Version="3.21.5" />
+		<PackageReference Include="Grpc.Tools" Version="2.47.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Volo.Abp.AutoMapper" Version="8.0.0-rc.3" />
+		<PackageReference Include="Volo.Abp.Ddd.Application" Version="8.0.0-rc.3" />
+		<ProjectReference Include="..\Nover.Video.Application.Contracts\Nover.Video.Application.Contracts.csproj" />
+		<ProjectReference Include="..\Nover.Video.Core\Nover.Video.Core.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Protobuf Include="BBDown.Core\APP\Header\device.proto" />
+	  <Protobuf Include="BBDown.Core\APP\Header\fawkesreq.proto" />
+	  <Protobuf Include="BBDown.Core\APP\Header\locale.proto" />
+	  <Protobuf Include="BBDown.Core\APP\Header\metadata.proto" />
+	  <Protobuf Include="BBDown.Core\APP\Header\network.proto" />
+	  <Protobuf Include="BBDown.Core\APP\Header\restriction.proto" />
+	  <Protobuf Include="BBDown.Core\APP\Payload\dmviewreq.proto" />
+	  <Protobuf Include="BBDown.Core\APP\Payload\playviewreq.proto" />
+	  <Protobuf Include="BBDown.Core\APP\Response\dmviewreply.proto" />
+	  <Protobuf Include="BBDown.Core\APP\Response\playviewreply.proto" />
+	</ItemGroup>
+
+</Project>

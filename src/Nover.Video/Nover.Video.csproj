@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0</TargetFramework>
+		<RootNamespace>Nover.Video</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Remove="E:\NuGetPackages\packages\volo.abp.aspnetcore.mvc\7.4.0-rc.3\contentFiles\any\net7.0\Volo.Abp.AspNetCore.Mvc.abppkg.analyze.json" />
+		<Content Remove="E:\NuGetPackages\packages\volo.abp.aspnetcore.mvc\7.4.0-rc.3\contentFiles\any\net7.0\Volo.Abp.AspNetCore.Mvc.abppkg.json" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<PackageReference Include="Serilog.Extensions.Logging" Version="3.1.0" />
+		<PackageReference Include="Serilog.Sinks.Async" Version="1.5.0" />
+		<PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Nover.Video.Application.Contracts\Nover.Video.Application.Contracts.csproj" />
+		<ProjectReference Include="..\Nover.Video.Core\Nover.Video.Core.csproj" />
+		<ProjectReference Include="..\Nover.Video.WebView2\Nover.Video.WebView2.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="ClientApp\" />
+	</ItemGroup>
+
+</Project>

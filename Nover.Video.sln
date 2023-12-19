@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{649A3FFA-182F-4E56-9717-E6A9A2BEC545}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nover.Video", "src\Nover.Video\Nover.Video.csproj", "{6B48D13F-2988-435D-9A9B-21B27D5417FA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nover.Video.Application", "src\Nover.Video.Application\Nover.Video.Application.csproj", "{5F0D42A3-B864-41CF-9652-64952F6F9C79}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nover.Video.Application.Contracts", "src\Nover.Video.Application.Contracts\Nover.Video.Application.Contracts.csproj", "{49F8F1D6-6753-450C-9BC4-EF3F3F56E4AC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nover.Video.Core", "src\Nover.Video.Core\Nover.Video.Core.csproj", "{67B1DBA6-4395-4F7F-B6E8-D65FD40A8A4D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nover.Video.WebView2", "src\Nover.Video.WebView2\Nover.Video.WebView2.csproj", "{5003E4C1-9132-4115-B26D-AAD3A81D81F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B48D13F-2988-435D-9A9B-21B27D5417FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B48D13F-2988-435D-9A9B-21B27D5417FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B48D13F-2988-435D-9A9B-21B27D5417FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B48D13F-2988-435D-9A9B-21B27D5417FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F0D42A3-B864-41CF-9652-64952F6F9C79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F0D42A3-B864-41CF-9652-64952F6F9C79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F0D42A3-B864-41CF-9652-64952F6F9C79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F0D42A3-B864-41CF-9652-64952F6F9C79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49F8F1D6-6753-450C-9BC4-EF3F3F56E4AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49F8F1D6-6753-450C-9BC4-EF3F3F56E4AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49F8F1D6-6753-450C-9BC4-EF3F3F56E4AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49F8F1D6-6753-450C-9BC4-EF3F3F56E4AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67B1DBA6-4395-4F7F-B6E8-D65FD40A8A4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67B1DBA6-4395-4F7F-B6E8-D65FD40A8A4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67B1DBA6-4395-4F7F-B6E8-D65FD40A8A4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67B1DBA6-4395-4F7F-B6E8-D65FD40A8A4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5003E4C1-9132-4115-B26D-AAD3A81D81F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5003E4C1-9132-4115-B26D-AAD3A81D81F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5003E4C1-9132-4115-B26D-AAD3A81D81F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5003E4C1-9132-4115-B26D-AAD3A81D81F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6B48D13F-2988-435D-9A9B-21B27D5417FA} = {649A3FFA-182F-4E56-9717-E6A9A2BEC545}
+		{5F0D42A3-B864-41CF-9652-64952F6F9C79} = {649A3FFA-182F-4E56-9717-E6A9A2BEC545}
+		{49F8F1D6-6753-450C-9BC4-EF3F3F56E4AC} = {649A3FFA-182F-4E56-9717-E6A9A2BEC545}
+		{67B1DBA6-4395-4F7F-B6E8-D65FD40A8A4D} = {649A3FFA-182F-4E56-9717-E6A9A2BEC545}
+		{5003E4C1-9132-4115-B26D-AAD3A81D81F0} = {649A3FFA-182F-4E56-9717-E6A9A2BEC545}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4324B3B4-B60B-4E3C-91D8-59576B4E26DD}
+	EndGlobalSection
+EndGlobal
