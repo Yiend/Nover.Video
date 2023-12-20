@@ -5,7 +5,7 @@ namespace Nover.Video.WebView2
 {
     public static class OnDocumentReadyScriptLoader
     {
-        private const string PromiseFilePath = "FarAway.WebView2.postMessagePromise.js";
+        private const string PromiseFilePath = "Nover.Video.WebView2.postMessagePromise.js";
 
         public static string PostMessagePromise
         {

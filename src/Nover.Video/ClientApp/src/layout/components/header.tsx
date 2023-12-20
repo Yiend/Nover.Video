@@ -16,7 +16,7 @@ import {
   } from "@/components/ui/menubar"
   import { ModeToggle } from "@/components/mode-toggle"
   
-  export function Menu() {
+  export function Header() {
     return (
       <Menubar className="rounded-none border-b border-none px-2 lg:px-4">
         <MenubarMenu>

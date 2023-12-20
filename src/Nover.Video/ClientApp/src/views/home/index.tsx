@@ -5,27 +5,13 @@ import { Separator } from "@/components/ui/separator"
 import { Tabs, TabsContent, TabsList, TabsTrigger,} from "@/components/ui/tabs"
 
 import { AlbumArtwork } from "./components/album-artwork"
-import { Menu } from "./components/menu"
 import { PodcastEmptyPlaceholder } from "./components/podcast-empty-placeholder"
-import { Sidebar } from "./components/sidebar"
-//import { SidebarNav } from "./components/sidebar-nav"
 import { listenNowAlbums, madeForYouAlbums } from "../../data/albums"
-import { playlists } from "../../data/playlists"
 
-export default function Home() {
+export default function homePage() {
   return (
     <>
-     <div className="overflow-hidden rounded-[0.5rem] border bg-background shadow">    
-        <div className="hidden md:block">
-            <Menu />
-            <div className="border-t">
-            <div className="bg-background">
-                <div className="grid lg:grid-cols-5">
-                {/* <SidebarNav/>     */}
-                <Sidebar playlists={playlists} className="hidden lg:block" />
-                <div className="col-span-3 lg:col-span-4 lg:border-l">
-                    <div className="h-full px-4 py-6 lg:px-8">
-                    <Tabs defaultValue="music" className="h-full space-y-6">
+     <Tabs defaultValue="music" className="h-full space-y-6">
                         <div className="space-between flex items-center">
                         <TabsList>
                             <TabsTrigger value="music" className="relative">
@@ -119,14 +105,7 @@ export default function Home() {
                         <Separator className="my-4" />
                         <PodcastEmptyPlaceholder />
                         </TabsContent>
-                    </Tabs>
-                    </div>
-                </div>
-                </div>
-            </div>
-            </div>
-        </div>
-      </div>      
+                    </Tabs>     
     </>
   )
 }

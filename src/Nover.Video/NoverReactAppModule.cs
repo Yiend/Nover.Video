@@ -20,9 +20,8 @@ public class NoverReactAppModule : AbpModule
     public override void ConfigureServices(ServiceConfigurationContext context)
     {
         context.Services.AddControllers(typeof(BaseController).Assembly);
-        context.Services.AddSingleton<IConfiguration, ReactAppConfig>();
+        context.Services.AddSingleton<IConfiguration>(new ReactAppConfig());
         context.Services.AddSingleton<IBrowserWindow, ReactAppWindow>();
-
 
         ConfigureOptions();
     }

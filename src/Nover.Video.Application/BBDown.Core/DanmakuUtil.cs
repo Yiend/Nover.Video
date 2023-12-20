@@ -24,7 +24,7 @@ namespace BBDown.Core
             await DownloadFile(danmakuUrl, xmlPath, aria2c, aria2cProxy);
         }*/
 
-        public static DanmakuItem[]? ParseXml(string xmlPath)
+        public static DanmakuItem[] ParseXml(string xmlPath)
         {
             // 解析xml文件
             XmlDocument xmlFile = new();
@@ -46,11 +46,11 @@ namespace BBDown.Core
 				}
             }
 
-            XmlNode? rootNode = xmlFile.SelectSingleNode("i");
+            XmlNode rootNode = xmlFile.SelectSingleNode("i");
             if (rootNode != null)
             {
                 XmlElement rootElement = (XmlElement)rootNode;
-                XmlNodeList? dNodeList = rootElement.SelectNodes("d");
+                XmlNodeList dNodeList = rootElement.SelectNodes("d");
                 if (dNodeList != null)
                 {
                     foreach (XmlNode node in dNodeList)
