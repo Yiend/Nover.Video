@@ -755,8 +755,7 @@ namespace BBDown
         {
             try
             {
-                var (encodingPriority, dfnPriority, firstEncoding, downloadDanmaku,
-                    input, savePathFormat, lang, aidOri, delay) = SetUpWork(myOption);
+                var (encodingPriority, dfnPriority, firstEncoding, downloadDanmaku,input, savePathFormat, lang, aidOri, delay) = SetUpWork(myOption);
                 var (fetchedAid, vInfo, apiType) = await GetVideoInfoAsync(myOption, aidOri, input);
                 await DownloadPagesAsync(myOption, vInfo, encodingPriority, dfnPriority, firstEncoding, downloadDanmaku,
                     input, savePathFormat, lang, fetchedAid, delay, apiType);

@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function settingPage() {
   return (
-    <div>index</div>
+    <div>下载设置</div>
   )
 }

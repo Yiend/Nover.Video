@@ -28,20 +28,52 @@ const router: Array<RouteObject>= [
     },
     children:[
       {
-			path: "/",
-			element: lazyLoad(React.lazy(() => import("@/views/home/index"))),
-			meta: {
-				title: "首页",
-				key: "home"
-			}
+		path: "/",
+		element: lazyLoad(React.lazy(() => import("@/views/home/index"))),
+		meta: {
+			title: "首页",
+			key: "home"
+		}
+	 },
+	 {
+		path: "/down/bilibili",
+		element: lazyLoad(React.lazy(() => import("@/views/bilibili/index"))),
+		meta: {
+			title: "哔哩哔哩下载",
+			key: "bilibili"
+		}
+	 },
+	 {
+		path: "/down/xhs",
+		element: lazyLoad(React.lazy(() => import("@/views/xhs/index"))),
+		meta: {
+			title: "小红书下载",
+			key: "xhs"
+		}
+	 },
+	 {
+		path: "/down/tiktok",
+		element: lazyLoad(React.lazy(() => import("@/views/tiktok/index"))),
+		meta: {
+			title: "抖音下载",
+			key: "tiktok"
+		}
+	 },
+	 {
+		path: "/down/youtube",
+		element: lazyLoad(React.lazy(() => import("@/views/youtube/index"))),
+		meta: {
+			title: "油管下载",
+			key: "youtube"
+		}
 	 },
      {
-			path: "/setting/downloadSetting",
-			element: lazyLoad(React.lazy(() => import("@/views/setting/index"))),
-			meta: {
-				title: "下载设置",
-				key: "setting"
-			}
+		path: "/setting/downloadSetting",
+		element: lazyLoad(React.lazy(() => import("@/views/setting/index"))),
+		meta: {
+			title: "下载设置",
+			key: "setting"
+		}
 	  },
     ]
   },
