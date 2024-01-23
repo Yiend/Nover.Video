@@ -1,10 +1,4 @@
 ﻿using Volo.Abp.Modularity;
-using Volo.Abp.Localization;
-using Nover.Video.Localization;
-using Volo.Abp.Domain;
-using Volo.Abp.Localization.ExceptionHandling;
-using Volo.Abp.Validation;
-using Volo.Abp.Validation.Localization;
 using Volo.Abp.VirtualFileSystem;
 using Volo.Abp.Autofac;
 using Volo.Abp.AutoMapper;
@@ -13,9 +7,7 @@ namespace Nover.Video.Core
 {
     [DependsOn(
         typeof(AbpAutofacModule),
-        typeof(AbpAutoMapperModule),
-        typeof(AbpValidationModule),
-        typeof(AbpDddDomainSharedModule)
+        typeof(AbpAutoMapperModule)
     )]
     public class NoverCoreModule : AbpModule
     {
@@ -24,19 +16,6 @@ namespace Nover.Video.Core
             Configure<AbpVirtualFileSystemOptions>(options =>
             {
                 options.FileSets.AddEmbedded<NoverCoreModule>();
-            });
-
-            Configure<AbpLocalizationOptions>(options =>
-            {
-                options.Resources
-                    .Add<NoverResource>("zh-Hans")
-                    .AddBaseTypes(typeof(AbpValidationResource))
-                    .AddVirtualJson("/Localization/DB");
-            });
-
-            Configure<AbpExceptionLocalizationOptions>(options =>
-            {
-                options.MapCodeNamespace("DB", typeof(NoverResource));
             });
         }
     }

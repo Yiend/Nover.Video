@@ -5,6 +5,7 @@ using System;
 using System.IO;
 using Microsoft.Extensions.DependencyInjection;
 using Volo.Abp;
+using Nover.Video.Application.Contracts;
 
 namespace Nover.Video.ReactApp
 {
@@ -33,6 +34,7 @@ namespace Nover.Video.ReactApp
                  });
                 _application.Initialize();
                 _application.ServiceProvider.WebViewRun(args);
+
             }
             catch (Exception ex)
             {

@@ -7,10 +7,16 @@ using Nover.Video.WebView2.Configuration;
 using Nover.Video.WebView2;
 using System;
 using Volo.Abp.Timing;
+using Nover.Video.EntityFrameworkCore;
 
 namespace Nover.Video.ReactApp;
 
-[DependsOn(typeof(NoverWebView2Module))]
+
+[DependsOn(
+    typeof(NoverWebView2Module),
+    typeof(NoverApplicationModule),
+    typeof(NoverEntityFrameworkCoreModule)
+    )]
 public class NoverReactAppModule : AbpModule
 {
     /// <summary>
@@ -39,8 +45,6 @@ public class NoverReactAppModule : AbpModule
         });
 
         Configure<AbpClockOptions>(options => options.Kind = DateTimeKind.Local);
-
-       
     }
 
 

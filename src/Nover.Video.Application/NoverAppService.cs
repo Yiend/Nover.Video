@@ -7,7 +7,7 @@ public abstract class NoverAppService : ApplicationService
 {
     protected NoverAppService()
     {
-        LocalizationResource = typeof(NoverResource);
+        LocalizationResource = typeof(VideoResource);
         ObjectMapperContext = typeof(NoverApplicationModule);
     }
 }

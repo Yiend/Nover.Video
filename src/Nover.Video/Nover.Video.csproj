@@ -21,12 +21,24 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\Nover.Video.Application.Contracts\Nover.Video.Application.Contracts.csproj" />
+		<ProjectReference Include="..\Nover.Video.Application\Nover.Video.Application.csproj" />
 		<ProjectReference Include="..\Nover.Video.Core\Nover.Video.Core.csproj" />
+		<ProjectReference Include="..\Nover.Video.Downloader\Nover.Video.Downloader.csproj" />
+		<ProjectReference Include="..\Nover.Video.EntityFrameworkCore\Nover.Video.EntityFrameworkCore.csproj" />
 		<ProjectReference Include="..\Nover.Video.WebView2\Nover.Video.WebView2.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<Folder Include="ClientApp\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="appsettings.json">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Video.db">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
 	</ItemGroup>
 
 </Project>
